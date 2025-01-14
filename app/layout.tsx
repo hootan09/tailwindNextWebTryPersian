@@ -1,16 +1,43 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const iranyekan = localFont({
+  src: [
+    {
+      path: '../public/fonts/IRANYEKANTHIN.ttf',
+      weight: '200',
+      style: "normal",
+    },
+    {
+      path: '../public/fonts/IRANYEKANREGULAR.ttf',
+      weight: '400',
+      style: "normal",
+    },
+    {
+      path: '../public/fonts/IRANYEKANMEDIUM.ttf',
+      weight: '500',
+      style: "normal",
+    },
+    {
+      path: '../public/fonts/IRANYEKANBOLD.ttf',
+      weight: '700',
+      style: "normal",
+    }
+  ],
+  variable: '--font-iranyekan'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${iranyekan.className} font-sans antialiased`}
       >
         {children}
       </body>
