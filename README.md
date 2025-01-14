@@ -40,3 +40,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 [Figma File](https://www.figma.com/design/4qYnr9eEjakFe4c4xkcRjD/Yektuber2-(Community)?node-id=1-2176&t=GjlDCExDNgpWacJL-0)
 
 [Color Conversion for Tailwind with TailwindMate](https://tailwindmate.jaleelbennett.com/)
+
+[Icons package (BoxIcons)](https://boxicons.com/?query=doll)
