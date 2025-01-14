@@ -87,6 +87,53 @@ export default function Home() {
         </div>
 
       </div>
+
+      <div className="flex items-center justify-around flex-col md:flex-col p-4 mt-6">
+        {/* button */}
+        <button className="px-4 py-2 rounded-xl bg-slate-200">
+          <div className="flex justify-center items-center gap-2">
+            <p className="text-slate-600">
+              معرفی یکتیوبر
+            </p>
+            <i className='bx bx-movie-play bx-sm text-red-600 pt-1'></i>
+          </div>
+        </button>
+
+        <div className="flex flex-row pt-6">
+          <span className="font-bold text-md text-slate-950">!با یوتیوب محتوات رو بساز، به یکتیوبر درآمدت رو نقد کن</span>
+        </div>
+
+        <p className="text-sm text-slate-500 pt-6 max-w-xl text-center leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+
+        <Image src='/images/Frame37.png' width={539} height={353} className="object-cover mt-6" alt="" />
+
+        <div className="mt-9 bg-red-600 rounded-xl px-2 py-1">
+          <span className="font-semibold text-sm text-white">ویژگی های یکتیوبر؟</span>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-around p-4 mt-6 gap-6 flex-nowrap overflow-auto min-h-60">
+          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+              <Image src='/images/iconsCard (1).png' width={119} height={103} className="absolute -top-12 object-cover" alt=""/>
+              <span className="text-sm font-bold text-black">حفاظت از کانال شما</span>
+          </div>
+          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+              <Image src='/images/iconsCard (4).png' width={82} height={2} className="absolute -top-12 object-cover" alt=""/>
+              <span className="text-sm font-bold text-black">مانیتورینگ هوشمند کانال</span>
+          </div>
+          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+              <Image src='/images/iconsCard (5).png' width={98} height={87} className="absolute -top-12 object-cover" alt=""/>
+              <span className="text-sm font-bold text-black">ارائه‌ی ابزارهای به روز </span>
+          </div>
+          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+              <Image src='/images/iconsCard (2).png' width={134} height={104} className="absolute -top-12 object-cover" alt=""/>
+              <span className="text-sm font-bold text-black">تسویه سریع و به موقع</span>
+          </div>
+          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+              <Image src='/images/iconsCard (3).png' width={106} height={106} className="absolute -top-12 object-cover" alt=""/>
+              <span className="text-sm font-bold text-black">کارمزد منصفانه</span>
+          </div>
+      </div>
     </>
   );
 }

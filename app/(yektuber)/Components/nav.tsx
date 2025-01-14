@@ -11,7 +11,8 @@ export default function NavBar() {
 
     return (
         // Section nav
-        <nav className="px-6 py-3 sticky shadow-lg top-0">
+        // <nav className="px-6 py-3 sticky shadow-lg top-0">
+        <nav className="px-6 py-3 shadow-lg top-0">
             <div className="container mx-auto flex justify-between items-center">
 
                 {/* logo right info */}
