@@ -113,26 +113,64 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-around p-4 mt-6 gap-6 flex-nowrap overflow-auto min-h-60">
-          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
-              <Image src='/images/iconsCard (1).png' width={119} height={103} className="absolute -top-12 object-cover" alt=""/>
-              <span className="text-sm font-bold text-black">حفاظت از کانال شما</span>
+        <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+          <Image src='/images/iconsCard (1).png' width={119} height={103} className="absolute -top-12 object-cover" alt="" />
+          <span className="text-sm font-bold text-black">حفاظت از کانال شما</span>
+        </div>
+        <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+          <Image src='/images/iconsCard (4).png' width={82} height={2} className="absolute -top-12 object-cover" alt="" />
+          <span className="text-sm font-bold text-black">مانیتورینگ هوشمند کانال</span>
+        </div>
+        <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+          <Image src='/images/iconsCard (5).png' width={98} height={87} className="absolute -top-12 object-cover" alt="" />
+          <span className="text-sm font-bold text-black">ارائه‌ی ابزارهای به روز </span>
+        </div>
+        <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+          <Image src='/images/iconsCard (2).png' width={134} height={104} className="absolute -top-12 object-cover" alt="" />
+          <span className="text-sm font-bold text-black">تسویه سریع و به موقع</span>
+        </div>
+        <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
+          <Image src='/images/iconsCard (3).png' width={106} height={106} className="absolute -top-12 object-cover" alt="" />
+          <span className="text-sm font-bold text-black">کارمزد منصفانه</span>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center flex-col md:flex-row-reverse p-8">
+        <div className="flex flex-col w-1/2">
+          <div className="flex flex-row-reverse gap-2 justify-center items-center">
+            <span className="text-lg font-bold text-slate-700">مشاوره رایگان</span>
+            <span className="text-2xl font-bold text-slate-900">یکتیوبر</span>
+            <span className="text-2xl font-bold text-red-600">.</span>
           </div>
-          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
-              <Image src='/images/iconsCard (4).png' width={82} height={2} className="absolute -top-12 object-cover" alt=""/>
-              <span className="text-sm font-bold text-black">مانیتورینگ هوشمند کانال</span>
+          <p className="text-xs font-normal text-slate-600 px-10 text-right mt-4 leading-7">تولید محتوا در یوتیوبیک فعالیت هیجان‌انگیز است که در کنار جذابیت‌هایش، مشکلات و فوت ‌و فن‌های خودش راهم دارد: از اینکه چطور محتوای مخاطب‌پسند تولید کنیم گرفته تا چه کارهایی باعثاخطار و استرایک گرفتن می‌شوند و اصلاً اگر به درآمد یوتیوبی رسیدیم، حالا چطور آنرا نقد کنیم و... . یک‌تیوبر تیمی از حرفه‌ای‌های کسب درآمد از یوتیوب دارد که باکوله‌باری از تجربۀ یوتیوبی، آماده‌اند تا کاملاً رایگان برای حل مشکلات یوتیوبرهاکنارشان باشند. اگر نیاز به مشاوره و راهنمایی دارید، ما در کنار شما هستیم!</p>
+        </div>
+
+        <div className="flex-col justify-center items-center p-12 bg-black rounded-2xl w-1/2">
+          <div className="flex flex-row justify-end items-center gap-2">
+            <h3 className="text-white text-2xl">فرم درخواست مشاوره</h3>
+            <i className='bx bxs-notepad bx-sm text-red-600'></i>
           </div>
-          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
-              <Image src='/images/iconsCard (5).png' width={98} height={87} className="absolute -top-12 object-cover" alt=""/>
-              <span className="text-sm font-bold text-black">ارائه‌ی ابزارهای به روز </span>
+          <p className="text-slate-300 text-right mt-2 text-sm leading-6">این فیلدها رو تکمیل کنید و برامون بفرستید تا کارشناسان یک ‌تیوبر توی سریع‌ترین زمان ممکن، برای راهنمایی با شما تماس بگیرن!</p>
+
+          <div className="grid grid-cols-2 justify-center items-center mt-6">
+            <div className="col-span-1">
+              <div className="flex flex-col justify-end items-end gap-2">
+                <h4 className="text-white text-sm font-semibold">شماره تماس</h4>
+                <input type="text" className="text-right py-2 px-4 w-5/6 text-xs bg-black text-slate-300 border-gray-700 border-[1px] rounded-lg" placeholder="...شماره تماس خود را وارد کنید" />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="flex flex-col justify-end items-end gap-2">
+                <h4 className="text-white text-sm font-semibold">نام و نام خانوادگی</h4>
+                <input type="text" className="text-right py-2 px-4 text-xs bg-black text-slate-300 border-gray-700 border-[1px] rounded-lg" placeholder="...نام خود را وارد کنید" />
+              </div>
+            </div>
           </div>
-          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
-              <Image src='/images/iconsCard (2).png' width={134} height={104} className="absolute -top-12 object-cover" alt=""/>
-              <span className="text-sm font-bold text-black">تسویه سریع و به موقع</span>
+          <div className="flex flex-col justify-end items-end mt-6 gap-2">
+            <h4 className="text-white text-sm font-semibold">لینک کانال یوتیوب</h4>
+            <input type="text" className="text-right w-11/12 py-2 px-4 text-xs bg-black text-slate-300 border-gray-700 border-[1px] rounded-lg" placeholder="...لینک کانال یوتیوب خود را وارد کنید" />
           </div>
-          <div className="relative min-h-24 min-w-56 rounded-2xl bg-neutral-100 flex flex-col justify-end pb-2 items-center">
-              <Image src='/images/iconsCard (3).png' width={106} height={106} className="absolute -top-12 object-cover" alt=""/>
-              <span className="text-sm font-bold text-black">کارمزد منصفانه</span>
-          </div>
+        </div>
       </div>
     </>
   );
